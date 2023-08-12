@@ -4,6 +4,8 @@ int main() {
     double num1, num2;
     char operation;
 
+    using namespace std;
+
     std::cout << "Simple Calculator" << std::endl;
     std::cout << "Enter the first number: ";
     std::cin >> num1;
@@ -11,7 +13,6 @@ int main() {
     std::cin >> operation;
     std::cout << "Enter the second number: ";
     std::cin >> num2;
-
     double result;
 
     switch (operation) {

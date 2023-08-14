@@ -1,16 +1,18 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     double num1, num2;
     char operation;
 
-    std::cout << "Simple Calculator" << std::endl;
-    std::cout << "Enter the first number: ";
-    std::cin >> num1;
-    std::cout << "Enter an operation (+, -, *, /): ";
-    std::cin >> operation;
-    std::cout << "Enter the second number: ";
-    std::cin >> num2;
+    cout << "Simple Calculator" << endl;
+    cout << "Enter the first number: ";
+    cin >> num1;
+    cout << "Enter an operation (+, -, *, /): ";
+    cin >> operation;
+    cout << "Enter the second number: ";
+    cin >> num2;
 
     double result;
 
@@ -28,16 +30,16 @@ int main() {
             if (num2 != 0) {
                 result = num1 / num2;
             } else {
-                std::cout << "Error: Division by zero is not allowed." << std::endl;
+                cout << "Error: Division by zero is not allowed." << endl;
                 return 1;  // Exit with an error code
             }
             break;
         default:
-            std::cout << "Invalid operation." << std::endl;
+            cout << "Invalid operation." << endl;
             return 1;  // Exit with an error code
     }
 
-    std::cout << "Result: " << result << std::endl;
+    cout << "Result: " << result << endl;
 
     return 0;
 }
